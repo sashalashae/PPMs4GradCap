@@ -1,0 +1,21 @@
+#!/bin/bash
+for (( ; ; ))
+do
+    echo "infinite loops [ hit CTRL+C to stop]"
+    sudo timeout 30 /home/pi/Downloads/rpi-rgb-led-matrix/examples-api-use/demo --led-pixel-mapper='Rotate:180' -D0
+    sudo timeout 30 /home/pi/Downloads/rpi-rgb-led-matrix/examples-api-use/demo --led-pixel-mapper='Rotate:180' /home/pi/Downloads/rpi-rgb-led-matrix/examples-api-use/bgcode.ppm -m 10000 -D1
+    sudo timeout 30 /home/pi/Downloads/rpi-rgb-led-matrix/examples-api-use/demo --led-pixel-mapper='Rotate:180' /home/pi/Downloads/rpi-rgb-led-matrix/examples-api-use/blackmag.ppm -m 10000 -D1
+    sudo timeout 30 /home/pi/Downloads/rpi-rgb-led-matrix/examples-api-use/demo --led-pixel-mapper='Rotate:180' /home/pi/Downloads/rpi-rgb-led-matrix/examples-api-use/hokiebird.ppm -m 100 -D1
+    sudo timeout 30 /home/pi/Downloads/rpi-rgb-led-matrix/examples-api-use/demo --led-pixel-mapper='Rotate:180' -D3
+    sudo timeout 30 /home/pi/Downloads/rpi-rgb-led-matrix/examples-api-use/demo --led-pixel-mapper='Rotate:180' /home/pi/Downloads/rpi-rgb-led-matrix/examples-api-use/vtsign.ppm -m 100 -D1
+    sudo timeout 30 /home/pi/Downloads/rpi-rgb-led-matrix/examples-api-use/demo --led-pixel-mapper='Rotate:180' -D4
+    sudo timeout 30 /home/pi/Downloads/rpi-rgb-led-matrix/examples-api-use/demo --led-pixel-mapper='Rotate:270' -D9
+    sudo timeout 30 /home/pi/Downloads/rpi-rgb-led-matrix/examples-api-use/demo --led-pixel-mapper='Rotate:180' /home/pi/Downloads/rpi-rgb-led-matrix/examples-api-use/bgcode.ppm -m 10000 -D1
+    sudo timeout 40 /home/pi/Downloads/rpi-rgb-led-matrix/examples-api-use/demo --led-pixel-mapper='Rotate:180' -D6
+    sudo timeout 20 /home/pi/Downloads/rpi-rgb-led-matrix/examples-api-use/demo --led-pixel-mapper='Rotate:180' -D7
+    sudo timeout 30 /home/pi/Downloads/rpi-rgb-led-matrix/examples-api-use/demo --led-pixel-mapper='Rotate:180' /home/pi/Downloads/rpi-rgb-led-matrix/examples-api-use/blackmag.ppm -m 10000 -D1
+    sudo timeout 40 /home/pi/Downloads/rpi-rgb-led-matrix/examples-api-use/demo --led-pixel-mapper='Rotate:180' -D8
+    sudo timeout 30 /home/pi/Downloads/rpi-rgb-led-matrix/examples-api-use/demo --led-pixel-mapper='Rotate:180' -D9
+    sudo timeout 30 /home/pi/Downloads/rpi-rgb-led-matrix/examples-api-use/demo --led-pixel-mapper='Rotate:270' -D10
+    sudo timeout 30 /home/pi/Downloads/rpi-rgb-led-matrix/examples-api-use/demo --led-pixel-mapper='Rotate:270' -D11
+done
